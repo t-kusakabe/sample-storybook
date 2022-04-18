@@ -14,5 +14,7 @@ services:
       - type: bind
         source: .
         target: /sample-storybook
+    environment:
+      - NODE_OPTIONS=--openssl-legacy-provider
     tty: true
     stdin_open: true
