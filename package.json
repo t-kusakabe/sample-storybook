@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "lint": "eslint . --ext .ts,.js,.tsx,.jsx",
+    "lint:fix": "eslint --fix . --ext .ts,.js,.tsx,.jsx"
   },
   "dependencies": {
     "@tailwindcss/postcss7-compat": "^2.2.17",
