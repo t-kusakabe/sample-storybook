@@ -1,11 +1,11 @@
-import React from 'react';
+import React from 'react'
 
 export interface ButtonProps {
-  primary?: boolean;
-  backgroundColor?: string;
-  size?: 'small' | 'medium' | 'large';
-  label: string;
-  onClick?: () => void;
+  primary?: boolean
+  backgroundColor?: string
+  size?: 'small' | 'medium' | 'large'
+  label: string
+  onClick?: () => void
 }
 
 export const Button = ({
@@ -15,14 +15,15 @@ export const Button = ({
   label,
   ...props
 }: ButtonProps) => {
-  const baseButton = 'rounded-full font-bold';
-  const sizeMode = size === 'small'
-    ? 'py-1.5 px-4 text-xs'
-    : size === 'medium'
-    ? 'py-2 px-5 text-sm'
-    : size === 'large'
-    ? 'py-3 px-6 text-base'
-    : '';
+  const baseButton = 'rounded-full font-bold'
+  const sizeMode =
+    size === 'small'
+      ? 'py-1.5 px-4 text-xs'
+      : size === 'medium'
+      ? 'py-2 px-5 text-sm'
+      : size === 'large'
+      ? 'py-3 px-6 text-base'
+      : ''
 
   return primary ? (
     <button
@@ -42,5 +43,5 @@ export const Button = ({
     >
       {label}
     </button>
-  );
-};
+  )
+}
